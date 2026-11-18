@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Cambria, serif;
+  --font-sans: "Instrument Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-cream: #F9F7F2;
+  --color-brand-charcoal: #2D2926;
+  --color-brand-moss: #606C38;
+  --color-brand-caramel: #BC6C25;
+  --color-brand-gold: #DDA15E;
+  --color-brand-straw: #FEFAE0;
+  --color-brand-olive: #E9EDC9;
+  --color-brand-sand: #E5E1D8;
+  --color-brand-footer: #F2EDE4;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-cream);
+    color: var(--color-brand-charcoal);
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, .font-serif-theme {
+    font-family: var(--font-serif);
+  }
+}
+
+.custom-shadow-moss {
+  box-shadow: 0 10px 25px -5px rgba(96, 108, 56, 0.15);
+}
+
+.custom-shadow-caramel {
+  box-shadow: 0 10px 25px -5px rgba(188, 108, 37, 0.15);
+}
+
